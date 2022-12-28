@@ -21,6 +21,7 @@ p {
 }
 h1 {
   font-family: "poppins";
+  font-size: 1.4em;
 }
 .navbar-bg {
   padding: 24px 0 240px 0;
@@ -116,15 +117,20 @@ h1 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 30px;
   width: 500px;
-  margin: 90px auto;
+  margin: 40px auto;
+  border-radius: 6px;
+}
+#aktuelles-header {
+  text-align: center; 
+  margin-top: 64px;
 }
 .aktuelles-box h1 {
   margin-bottom: 14px;
-  font-size: 1.3em;
   color: var(--primary-color);
 }
 .aktuelles {
   align-items: center;
+  display: flex;
 }
 .introduction {
   background-color: rgba(0, 0, 0, 0.6);
@@ -143,15 +149,18 @@ h1 {
   margin: 10px auto;
   width: 600px;
 }
-.introduction h1 {
-  font-size: 1.3em;
-}
 .opening-times {
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .ot {
   text-align: right;
+}
+.opening-times div {
+  text-align: center;
+  margin: 24px 0;
 }
 
 @media screen and (max-width: 1300px) {
@@ -201,6 +210,9 @@ h1 {
   .introduction p, .introduction h1 {
     width: 360px;
   }
+  .opening-times {
+    display: block;
+  }
 }
 @media screen and (max-width: 580px) {
   .content {
@@ -217,5 +229,12 @@ h1 {
   }
   .introduction p, .introduction h1 {
     width: 300px
+  }
+  p {
+    line-height: 20px;
+    font-size: 0.9em;
+  }
+  .side-menu {
+    width: 100%;
   }
 }
