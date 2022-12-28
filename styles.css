@@ -16,7 +16,12 @@
 .content {
   margin: 0 16vw;
 }
-
+p {
+  line-height: 24px;
+}
+h1 {
+  font-family: "poppins";
+}
 .navbar-bg {
   padding: 24px 0 240px 0;
   background-color: rgb(85, 85, 85);
@@ -28,11 +33,10 @@
 }
 .navbar {
   padding-left: 8vw;
-  padding-right: 18vw;
+  padding-right: 10vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 .logo img {
   width: 240px;
@@ -51,7 +55,7 @@
   color: white;
   text-decoration: none;
   padding: 12px 0;
-  margin: 0 24px;
+  margin: 0 20px;
   transition: 0.2s all ease-in;
 }
 .navbar-links a:hover {
@@ -61,7 +65,6 @@
   color: white;
   padding-top: 140px;
   text-align: center;
-  font-family: "poppins";
   font-size: 2.5em;
 }
 
@@ -108,11 +111,111 @@
   padding: 24px 48px;
 }
 
+.aktuelles-box {
+  border: 1px solid #212121;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 30px;
+  width: 500px;
+  margin: 90px auto;
+}
+.aktuelles-box h1 {
+  margin-bottom: 14px;
+  font-size: 1.3em;
+  color: var(--primary-color);
+}
+.aktuelles {
+  align-items: center;
+}
+.introduction {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(./images/restaurant\ 2.jpg);
+  background-blend-mode: multiply;
+  color: white;
+  padding: 120px 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 120px;
+  
+}
+.introduction p, .introduction h1 {
+  margin: 10px auto;
+  width: 600px;
+}
+.introduction h1 {
+  font-size: 1.3em;
+}
+.opening-times {
+  margin: 0 auto;
+  width: 100%;
+}
+.ot {
+  text-align: right;
+}
+
+@media screen and (max-width: 1300px) {
+  .navbar {
+    display: block;
+  }
+  .logo {
+    text-align: center;
+  }
+  .navbar {
+  padding: 0 14vw;
+}
+}
 @media screen and (max-width: 1100px) {
   .navbar-links {
     display: none;
   }
+  .navbar {
+    display: flex;
+    padding-left: 8vw;
+  padding-right: 10vw;
+  }
+  .logo {
+    text-align: left;
+  }
+  .logo img {
+    width: 160px;
+  }
   .toggle-button {
     display: block;
+  }
+  .header-welcome h1 {
+    font-size: 2em;
+  }
+  .content {
+    margin: 0 8vw;
+  }
+  .aktuelles {
+    display: block;
+  }
+  .aktuelles-social-media {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .introduction p, .introduction h1 {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .content {
+    margin: 0 4vw;
+  }
+  .aktuelles-box {
+    width: 100%;
+  }
+  .navbar-bg {
+    padding: 60px 0;
+  }
+  .header-welcome h1 {
+    padding: 90px 0;
+  }
+  .introduction p, .introduction h1 {
+    width: 300px
   }
 }
