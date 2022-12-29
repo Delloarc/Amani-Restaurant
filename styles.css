@@ -37,7 +37,7 @@ h1 {
 .navbar-bg {
   padding: 24px 0 80px 0;
   background-color: rgb(85, 85, 85);
-  background-image: url(./images/restaurant.jpg);
+  background-image: url(./images/restaurant.jpeg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -95,15 +95,15 @@ h1 {
   text-align: center;
 }
 .header-links a:nth-child(1){
-  color: var(--secondary-color);
-  background-color: #fefae0 ;
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
 }
 .header-links a:nth-child(1):hover{
   opacity: 0.75;
 }
 .header-links a:nth-child(2) {
-  color: var(--secondary-color);
-  background-color: #faedcd;
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
 }
 .header-links a:nth-child(2):hover{
   opacity: 0.75;
@@ -161,6 +161,18 @@ h1 {
   border-radius: 6px;
   margin: 20px auto;
   background-color: #fefae0;
+  position: relative;
+}
+.aktuelles-box::after {
+  z-index: -100;
+  content: "";
+  position: absolute;
+  background-color: #ebd2a4;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
 }
 #aktuelles-header {
   text-align: center; 
@@ -180,7 +192,7 @@ h1 {
 }
 .introduction {
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(./images/restaurant\ 2.jpg);
+  background-image: url(./images/restaurant\ 2.jpeg);
   background-blend-mode: multiply;
   color: var(--text-color);
   padding: 120px 0;
@@ -234,7 +246,7 @@ h1 {
   opacity: 0.75;
 }
 #food-bg {
-  background-image: url(./images/food.jpg);
+  background-image: url(./images/food.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -260,7 +272,7 @@ h1 {
   margin-left: 32px;
 }
 #drinks-bg {
-  background-image: url(./images/drinks.jpg);
+  background-image: url(./images/drinks.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,6 +295,11 @@ h1 {
 .button-link {
   margin: 24px 0;
 }
+
+.google-maps {
+  margin-bottom: 120px;
+}
+
 .underline {
   width: calc(100% - 32vw);
   margin: 0 auto;
@@ -314,12 +331,17 @@ h1 {
   text-decoration: none;
   opacity: 0.5;
   font-weight: bolder;
+  transition: 0.3s all ease-in;
+}
+.impressum a:hover, .datenschutz a:hover {
+  opacity: 1;
 }
 .social-media {
   display: flex;
   justify-content: center;
   gap: 16px;
 }
+
 
 @media screen and (max-width: 1500px) {
   .aktuelles-box {
@@ -414,9 +436,13 @@ h1 {
   width: 100%;
   margin: 0;
 }
+.button-link {
+  text-align: center;
+}
 #food-bg, #drinks-bg {
-  height: 340px;
-  width: 100%;
+  height: 220px;
+  width: 60%;
+  margin: 0 auto;
 }
   .drinks-flex {
     flex-direction: column-reverse;
@@ -456,5 +482,18 @@ h1 {
   }
   .logo img {
     width: 120px;
+  }
+  .footer-first-row {
+    display: block;
+    text-align: center;
+  }
+  .footer-logo, .footer-first-row .address {
+    margin-bottom: 24px;
+  }
+  .footer {
+    font-size: 0.9em;
+  }
+  .footer-second-row {
+    gap: 24px;
   }
 }
