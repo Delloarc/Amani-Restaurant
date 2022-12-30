@@ -38,5 +38,7 @@
     gap: 24px;
     align-items: center;
   }
-  
+  .content p {
+    width: 100%;
+  }
 }
