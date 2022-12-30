@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="index.js" async defer></script>
+  </head>
+  <body>
+    <div class="navbar-bg">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+          </div>
+          <div class="navbar-links" id="navbar-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">Über Uns</a>
+            <a href="./speisekarte.html">Speisekarte</a>
+            <a href="#">Reservierung</a>
+            <a href="./events.html">Events</a>
+            <a href="./galerie.html">Galerie</a>
+            <a href="./contact.html" class="active-link">Kontakt</a>
+          </div>
+
+          <div class="side-menu" id="side-menu">
+            <div class="close-button" id="close-button">
+              <a href="#" onclick="closeNav()"
+                ><img src="./images/close.png" alt=""
+              /></a>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="about.html" >Über Uns</a>
+            <a href="speisekarte.html">Speisekarte</a>
+            <a href="#">Reservierung</a>
+            <a href="#">Events</a>
+            <a href="#">Galerie</a>
+            <a href="contact.html" class="active-side-menu-link">Kontakt</a>
+          </div>
+
+          <div class="toggle-button" id="toggle-button">
+            <a href="#" onclick="toggleNav()"
+              ><img src="./images/menu.webp" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="header-welcome">
+          <h1>Kontakt</h1>
+        </div>
+        <div class="contact-options">
+          <p>+49 1525 3883231</p>
+          |
+          <p>amani@f-amani.de</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="contact-intro">
+          <h1>Sie suchen Kontakt?</h1>
+          <div class="underline"></div>
+        <p>Sie können uns mithilfe der oben angegebenen Telefonnummer und Email erreichen. Alternativ können Sie auch das Kontaktformular nutzen.</p>
+        </div>
+
+        <div class="contact-form">
+          <form action="https://submit-form.com/MCL9Lp2l">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                class="input"
+                placeholder="Vor- und Nachname"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                class="input"
+                placeholder="Ihre Email-Adresse"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="input"
+                placeholder="Ihre Telefonnummer"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="Betreff"
+                class="input"
+                placeholder="Betreff"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="Nachricht"
+                class="input"
+                cols="30"
+                rows="14"
+                placeholder="Ihre Nachricht"
+                required
+              ></textarea>
+            </div>
+
+            <div class="F-submit">
+                <button
+                  class="input"
+                  id="submit-button"
+                  type="submit"
+                >
+                  Senden
+                </button>
+              </div>
+          </form>
+        </div>
+      </div>
+    
+  </body>
+</html>

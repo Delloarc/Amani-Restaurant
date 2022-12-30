@@ -1,0 +1,91 @@
+
+.navbar-bg {
+  background-image: url(./images/restaurant\ 4.jpg);
+  padding-bottom: 120px;
+}
+.contact-options {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 0;
+  color: #ebd2a4;
+}
+.contact-intro {
+  width: 420px;
+  margin: 64px auto;
+  text-align: center;
+}
+.contact-intro h1 {
+  color: #ebd2a4;
+}
+.underline {
+  width: 100%;
+  margin-top: 32px;
+}
+.contact-intro p {
+  margin-top: 32px;
+}
+.input {
+  width: 480px;
+  padding: 14px;
+  margin: 10px 0;
+  border: 2px solid rgb(192, 192, 192);
+  border-radius: 4px;
+}
+.contact-form {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+#submit-button {
+  border: none;
+  color: black;
+  background: #ebd2a4;
+  transition: 0.2s all ease-in;
+  box-sizing: border-box;
+}
+#submit-button:hover {
+  color: #ebd2a4;
+  background: #212121;
+  border: 1px solid #ebd2a4;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .input {
+    width: 320px;
+    padding: 12px;
+  }
+  .form-heading h2 {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contact-flex {
+    display: block;
+  }
+  .contact-form,
+  .input,
+  .form-heading h2 {
+    width: 100%;
+  }
+  .contact-right img {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .contact-text {
+    text-align: center;
+    padding: 32px 8vw;
+  }
+  .contact-text > p {
+    margin: 16px 0;
+    font-size: 1em;
+  }
+  .contact-options-flex {
+    display: block;
+    text-align: left;
+  }
+  .contact-intro {
+    width: 100%;
+  }
+}
