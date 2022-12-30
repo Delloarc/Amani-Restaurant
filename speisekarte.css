@@ -32,6 +32,20 @@
   justify-content: center;
   gap: 48px;
 }
+
+.k-if {
+  margin: 120px 0;
+}
+.k-if:nth-child(1) {
+  margin-top: 200px;
+}
+.k-if h1 {
+  margin-bottom: 24px;
+}
+.k-if iframe {
+  margin-bottom: 32px;
+}
+
 @media screen and (max-width: 580px) {
   .karten-flex {
     flex-direction: column;
