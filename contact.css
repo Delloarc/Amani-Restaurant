@@ -18,8 +18,12 @@
 .contact-intro h1 {
   color: #ebd2a4;
 }
-.underline {
+.underline-2 {
   width: 100%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: var(--text-color);
+  opacity: 0.7;
   margin-top: 32px;
 }
 .contact-intro p {
