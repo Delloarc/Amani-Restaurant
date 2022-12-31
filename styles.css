@@ -227,6 +227,9 @@ h1 {
   color: var(--text-color);
   margin-bottom: 120px;
 }
+.speisen-wrapper h1, .drinks-wrapper h1 {
+  color: #ebd2a4;
+}
 .speisen-flex {
   display: flex;
 }
