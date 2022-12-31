@@ -164,7 +164,7 @@ h1 {
   background-color: #fefae0;
   position: relative;
 }
-.aktuelles-box::after {
+/* .aktuelles-box::after {
   z-index: -100;
   content: "";
   position: absolute;
@@ -174,7 +174,7 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 6px;
-}
+} */
 #aktuelles-header {
   text-align: center; 
   padding-top: 140px;
@@ -253,6 +253,7 @@ h1 {
   background-repeat: no-repeat;
   width: 50%;
   position: relative;
+  border-radius: 6px;
 }
 #food-bg::after {
   z-index: -100;
@@ -263,6 +264,7 @@ h1 {
   right: 10px;
   width: 100%;
   height: 100%;
+  border-radius: 6px;
 }
 
 .drinks-flex {
@@ -279,6 +281,7 @@ h1 {
   background-repeat: no-repeat;
   width: 50%;
   position: relative;
+  border-radius: 6px;
 }
 #drinks-bg::after {
   z-index: -100;
@@ -289,6 +292,7 @@ h1 {
   left: 10px;
   width: 100%;
   height: 100%;
+  border-radius: 6px;
 }
 .drinks-wrapper {
   margin-bottom: 120px;
