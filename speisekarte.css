@@ -42,7 +42,7 @@
 .k-if h1 {
   margin-bottom: 24px;
 }
-.k-if iframe {
+.k-if object {
   margin-bottom: 32px;
 }
 
@@ -60,7 +60,4 @@
     margin-left: auto;
     margin-right: auto;
   }
-  /* .k-if iframe {
-    display: none;
-  } */
 }
