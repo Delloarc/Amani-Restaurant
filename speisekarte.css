@@ -31,8 +31,11 @@
   display: flex;
   justify-content: center;
   gap: 48px;
+  text-align: center;
 }
-
+.kf-item {
+  width: 160px;
+}
 .k-if {
   margin: 120px 0;
 }
@@ -48,15 +51,16 @@
 
 @media screen and (max-width: 580px) {
   .karten-flex {
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
+    display: block;
+  }
+  .kf-item {
+    width: 160px;
+    margin: 36px auto;
   }
   .content p {
     width: 100%;
   }
   .gk {
-    width: 160px;
     margin-left: auto;
     margin-right: auto;
   }

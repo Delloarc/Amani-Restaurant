@@ -304,6 +304,9 @@ h1 {
 .google-maps {
   margin-bottom: 120px;
 }
+.google-maps iframe {
+  border-radius: 6px;
+}
 
 .underline {
   width: calc(100% - 32vw);
