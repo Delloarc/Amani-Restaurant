@@ -1,7 +1,7 @@
 .navbar-bg {
   background-color: rgb(139, 139, 139);
   background-image: url(./images/speisen-getraenke.jpg);
-  padding-bottom: 220px;
+  padding-bottom: 200px;
 }
 .content a {
   text-decoration: none;
@@ -66,5 +66,8 @@
   }
   .k-if iframe {
     height: 440px;
+  }
+  .navbar-bg {
+    padding-bottom: 40px;
   }
 }

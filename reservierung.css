@@ -1,6 +1,7 @@
 .navbar-bg {
   background-image: url(./images/restaurant\ 5.jpg);
   background-position: center;
+  padding-bottom: 200px;
 }
 .content {
   width: 660px;
@@ -21,5 +22,8 @@
 @media screen and (max-width: 580px) {
   .content {
     width: 90%;
+  }
+  .navbar-bg {
+    padding-bottom: 40px;
   }
 }

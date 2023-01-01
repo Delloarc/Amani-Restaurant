@@ -92,4 +92,11 @@
   .contact-intro {
     width: 100%;
   }
+  .navbar-bg {
+    padding-bottom: 40px;
+  }
+  .header-welcome h1 {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
 }

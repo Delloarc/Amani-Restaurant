@@ -466,6 +466,9 @@ h1 {
   .footer {
     padding: 40px 4vw;
   }
+  .toggle-button {
+    right: 40px;
+  }
   .underline {
     width: calc(100% - 8vw);
   }
@@ -473,7 +476,8 @@ h1 {
     width: 100%;
   }
   .navbar-bg {
-    padding: 60px 0;
+    padding-bottom: 60px;
+    padding-top: 32px;
   }
   .header-welcome h1 {
     padding: 90px 0;
@@ -507,4 +511,5 @@ h1 {
   .footer-second-row {
     gap: 24px;
   }
+
 }
