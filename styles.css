@@ -237,7 +237,7 @@ h1 {
   width: 50%;
   margin-right: 32px;
 }
-.speisen-text a, .drinks-text a {
+.speisen-text a, .drinks-text a, .events-text a {
   line-height: 60px;
   text-decoration: none;
   border: 1px solid var(--background-color);
@@ -246,7 +246,7 @@ h1 {
   border-radius: 6px;
   transition: all 0.3s ease-in;
 }
-.speisen-text a:hover, .drinks-text a:hover{
+.speisen-text a:hover, .drinks-text a:hover, .events-text a:hover {
   opacity: 0.75;
 }
 #food-bg {
@@ -302,6 +302,34 @@ h1 {
 }
 .button-link {
   margin: 24px 0;
+}
+
+.events {
+  margin-bottom: 120px;
+  background-color: #444;
+  padding: 60px 16vw;
+  background-image: url(./images/restaurant\ 6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+.events-header h1 {
+  color: #ebd2a4;
+}
+.events-header {
+  margin-bottom: 20px;
+}
+.events-header p {
+  font-weight: bolder;
+}
+.events p {
+  margin-bottom: 10px;
+  width: 800px;
+}
+.events-text a {
+  padding: 12px 64px;
 }
 
 .google-maps {
@@ -410,6 +438,9 @@ h1 {
   .footer {
     padding: 40px 8vw;
   }
+  .events {
+    padding: 60px 8vw;
+  }
   .footer-logo img {
     width: 120px;
   }
@@ -458,6 +489,9 @@ h1 {
   .drinks-flex {
     flex-direction: column-reverse;
   }
+  .events p {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 580px) {
   .content {
@@ -465,6 +499,9 @@ h1 {
   }
   .footer {
     padding: 40px 4vw;
+  }
+  .events {
+    padding: 60px 4vw;
   }
   .toggle-button {
     right: 40px;
