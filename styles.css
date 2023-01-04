@@ -304,34 +304,15 @@ h1 {
   margin: 24px 0;
 }
 
+
 .events {
   margin-bottom: 120px;
-  background-color: #444;
+  background-color: #212121;
   padding: 60px 16vw;
-  background-image: url(./images/restaurant\ 6.webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: multiply;
 }
-.events-header h1 {
-  color: #ebd2a4;
+.events iframe {
+  filter: invert(.85) saturate(0.7) hue-rotate(145deg);
 }
-.events-header {
-  margin-bottom: 20px;
-}
-.events-header p {
-  font-weight: bolder;
-}
-.events p {
-  margin-bottom: 10px;
-  width: 800px;
-}
-.events-text a {
-  padding: 12px 64px;
-}
-
 .google-maps {
   margin-bottom: 120px;
 }
@@ -407,6 +388,9 @@ h1 {
 .speisen-text, .drinks-text {
   width: 65%;
 }
+.events iframe {
+  height: 600px;
+}
 }
 @media screen and (max-width: 1100px) {
   .navbar-links {
@@ -480,6 +464,9 @@ h1 {
 }
 .button-link {
   text-align: center;
+}
+.events iframe {
+  height: 480px;
 }
 #food-bg, #drinks-bg {
   height: 220px;
