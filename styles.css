@@ -20,6 +20,7 @@ body {
   background-repeat: no-repeat;
   color: white;
 }
+
 :root {
   --background-color: #ebd2a4;
   --primary-color: #b97a3a;
@@ -43,8 +44,7 @@ h1 {
   background-image: url(./images/restaurant.webp);
   background-size: cover;
   background-position: center;
-/*   background-attachment: fixed; */
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-blend-mode: multiply;
 }
 .navbar {
@@ -485,6 +485,9 @@ h1 {
   }
   .events p {
     width: 100%;
+  }
+  .navbar-bg {
+    background-attachment: fixed;
   }
 }
 @media screen and (max-width: 580px) {
