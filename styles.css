@@ -456,6 +456,15 @@ h1 {
   #header-welcome h1 {
     padding-bottom: 20px;
   }
+  .header-links {
+    margin-top: 24px;
+  }
+  .navbar-bg {
+    padding-bottom: 280px !important;
+  }
+  #header-welcome h1 {
+    padding-top: 330px !important;
+  }
 }
 @media screen and (max-width: 900px) {
   .introduction p,
@@ -505,13 +514,13 @@ h1 {
     width: 100%;
   }
 }
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 900px){
     #header-welcome h1 {
     padding-top: 180px;
     padding-bottom: 20px;
   }
   .navbar-bg {
-    padding-bottom: 210px !important;
+    padding-bottom: 210px;
   }
 }
 @media screen and (max-width: 580px) {
