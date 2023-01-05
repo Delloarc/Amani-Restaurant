@@ -1,73 +1,127 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reservierung.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reservierung.css" />
     <script src="index.js" async defer></script>
   </head>
   <body>
     <div class="navbar-bg">
-        <div class="navbar">
-          <div class="logo">
-            <img src="./images/logo.png" alt="Logo" />
-          </div>
-          <div class="navbar-links" id="navbar-links">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">Über Uns</a>
-            <a href="./speisekarte.html">Speisekarte</a>
-            <a href="./reservierung.html" class="active-link">Reservierung</a>
-            <a href="./index.html#events">Events</a>
-            <a href="./galerie.html">Galerie</a>
-            <a href="./contact.html">Kontakt</a>
-          </div>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo" />
+        </div>
+        <div class="navbar-links" id="navbar-links">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">Über Uns</a>
+          <a href="./speisekarte.html">Speisekarte</a>
+          <a href="./reservierung.html" class="active-link">Reservierung</a>
+          <a href="./index.html#events">Events</a>
+          <a href="./galerie.html">Galerie</a>
+          <a href="./contact.html">Kontakt</a>
+        </div>
 
-          <div class="side-menu" id="side-menu">
-            <div class="close-button" id="close-button">
-              <a href="#" onclick="closeNav()"
-                ><img src="./images/close.png" alt=""
-              /></a>
-            </div>
-
-            <a href="index.html">Home</a>
-            <a href="about.html">Über Uns</a>
-            <a href="speisekarte.html">Speisekarte</a>
-            <a href="./reservierung.html" class="active-side-menu-link">Reservierung</a>
-            <a href="./index.html#events">Events</a>
-            <a href="./galerie.html">Galerie</a>
-            <a href="contact.html">Kontakt</a>
-          </div>
-
-          <div class="toggle-button" id="toggle-button">
-            <a href="#" onclick="toggleNav()"
-              ><img src="./images/menu.webp" alt=""
+        <div class="side-menu" id="side-menu">
+          <div class="close-button" id="close-button">
+            <a href="#" onclick="closeNav()"
+              ><img src="./images/close.png" alt=""
             /></a>
           </div>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">Über Uns</a>
+          <a href="speisekarte.html">Speisekarte</a>
+          <a href="./reservierung.html" class="active-side-menu-link"
+            >Reservierung</a
+          >
+          <a href="./index.html#events">Events</a>
+          <a href="./galerie.html">Galerie</a>
+          <a href="contact.html">Kontakt</a>
         </div>
 
-        <div class="header-welcome">
-          <h1>Reservierung</h1>
+        <div class="toggle-button" id="toggle-button">
+          <a href="#" onclick="toggleNav()"
+            ><img src="./images/menu.webp" alt=""
+          /></a>
         </div>
       </div>
 
-      <div class="content">
-        <p>Reservieren Sie über <a href="https://www.opentable.de/" target="_blank">OpenTable</a> oder direkt über unsere Telefonnummer 0211 36183147. Bitte berücksichtigen Sie, dass die Anfrage mindestens 2 Stunden davor getätigt werden muss und nur mit einer Bestätigung von uns gültig ist.</p> <br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia odit harum voluptatum quibusdam consequatur. Perspiciatis nostrum maiores consectetur debitis iure, nulla quam sit eos esse aperiam, dignissimos omnis rerum necessitatibus.</p>
+      <div class="header-welcome">
+        <h1>Reservierung</h1>
+      </div>
+    </div>
 
-
-        
-
+    <div class="content">
+      <div class="reservierung-header">
+        <p>
+          Reservieren Sie über das untere Kontaktformular, über unsere Email
+          (<span>restaurant@casa-amani.de</span> ) oder über unsere Telefonnummer (<span>0211
+          36183147</span> ). Bitte berücksichtigen Sie, dass eine Reservierungsanfrage
+          von uns bestätigt werden muss, damit Sie gültig ist.
+        </p>
       </div>
 
-      <div class="underline"></div>
+      <div class="contact-form">
+        <form action="https://submit-form.com/MCL9Lp2l">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="Name"
+              class="input"
+              placeholder="Vor- und Nachname"
+              required
+            />
+          </div>
 
-      <div class="footer-bg">
-        <div class="footer">
+          <div class="form-group">
+            <input
+              type="text"
+              id="phone"
+              name="Telefonnummer"
+              class="input"
+              placeholder="Ihre Telefonnummer"
+              required
+            />
+          </div>
 
+          <label for="time">Für wann reservieren Sie?</label>
+
+          <div class="form-group">
+            <input
+              type="datetime-local"
+              id="time"
+              name="Uhrzeit"
+              class="input"
+              required
+            />
+          </div>
+
+          <div class="F-submit">
+            <button class="input" id="submit-button" type="submit">
+              Senden
+            </button>
+            <p>
+              Beim Absenden dieses Formulars stimmen Sie den
+              <a href="datenschutz.html" style="color: white"
+                >Datenschutzrichtlinien</a
+              >
+              zu.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="underline"></div>
+
+    <div class="footer-bg">
+      <div class="footer">
         <div class="footer-first-row">
           <div class="footer-logo">
             <img src="./images/logo.png" alt="Logo" width="240px" />
@@ -78,12 +132,17 @@
           </div>
           <div class="contact">
             0211 36183147 <br />
-            restaurant@casa-amani.de <br>
+            restaurant@casa-amani.de <br />
           </div>
-
         </div>
 
-        <h1 style="text-align: center; color: var(--background-color); margin-top: 64px;">
+        <h1
+          style="
+            text-align: center;
+            color: var(--background-color);
+            margin-top: 64px;
+          "
+        >
           Öffnungszeiten
         </h1>
         <div class="opening-times">
@@ -122,32 +181,39 @@
             <p>geschlossen</p>
           </div>
         </div>
-        <div style="text-align: center; margin-top: 32px; color: var(--background-color);">Webdesign by Christian (christian.liu2811@gmail.com)</div>
-        
-  </div>
-<div class="underline"></div>
-        <div class="footer">
-
-        
-
+        <div
+          style="
+            text-align: center;
+            margin-top: 32px;
+            color: var(--background-color);
+          "
+        >
+          Webdesign by Christian (christian.liu2811@gmail.com)
+        </div>
+      </div>
+      <div class="underline"></div>
+      <div class="footer">
         <div class="footer-second-row">
           <div class="impressum">
             <a href="./impressum.html">Impressum</a>
           </div>
           <div class="social-media">
-            <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="" width="32px"></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="./images/instagram.png" alt="" width="32px"
+            /></a>
 
-            <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="" width="32px"></a>
-            
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="./images/facebook.png" alt="" width="32px"
+            /></a>
           </div>
           <div class="datenschutz">
             <a href="./datenschutz.html">Datenschutz</a>
           </div>
         </div>
-        <p style="text-align: center; color: #888; margin-top: 32px;">&copy; 2022 - jetzt Casa Amani | Alle Rechte vorbehalten</p>
-
+        <p style="text-align: center; color: #888; margin-top: 32px">
+          &copy; 2022 - jetzt Casa Amani | Alle Rechte vorbehalten
+        </p>
       </div>
-      </div>
-    
+    </div>
   </body>
 </html>

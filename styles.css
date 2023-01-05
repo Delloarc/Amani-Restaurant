@@ -199,12 +199,10 @@ h1 {
   background-blend-mode: multiply;
   color: var(--text-color);
   padding: 120px 0;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 120px;
-  
 }
 .introduction p, .introduction h1 {
   margin: 10px auto;

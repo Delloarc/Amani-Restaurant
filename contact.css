@@ -6,7 +6,7 @@
 .contact-options {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   padding: 40px 0;
   color: #ebd2a4;
 }
@@ -72,9 +72,6 @@
   .form-heading h2 {
     width: 100%;
   }
-  .contact-right img {
-    display: none;
-  }
 }
 @media screen and (max-width: 580px) {
   .contact-text {
@@ -98,5 +95,13 @@
   .header-welcome h1 {
     padding-top: 40px;
     padding-bottom: 24px;
+  }
+  .contact-options {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-options p:nth-child(2) {
+    display: none;
   }
 }
