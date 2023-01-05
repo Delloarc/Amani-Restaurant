@@ -508,6 +508,7 @@ h1 {
 @media screen and (max-height: 900px) {
     #header-welcome h1 {
     padding-top: 180px;
+    padding-bottom: 20px;
   }
   .navbar-bg {
     padding-bottom: 210px !important;
