@@ -84,14 +84,7 @@ h1 {
 #header-welcome h1 {
   padding-top: 300px;
 }
-@media screen and (max-height: 800px) {
-  #header-welcome h1 {
-    padding-top: 250px;
-  }
-  .navbar-bg {
-    padding-bottom: 280px !important;
-  }
-}
+
 
 .header-links {
   display: flex;
@@ -510,6 +503,12 @@ h1 {
   }
   .events p {
     width: 100%;
+  }
+  #header-welcome h1 {
+    padding-top: 250px;
+  }
+  .navbar-bg {
+    padding-bottom: 280px !important;
   }
 }
 @media screen and (max-width: 580px) {
