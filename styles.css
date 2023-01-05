@@ -43,7 +43,6 @@ h1 {
   background-image: url(./images/restaurant.webp);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-blend-mode: multiply;
 }
 .navbar {
