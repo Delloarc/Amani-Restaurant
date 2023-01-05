@@ -453,6 +453,9 @@ h1 {
     flex-direction: row;
     justify-content: center;
   }
+  #header-welcome h1 {
+    padding-bottom: 20px;
+  }
 }
 @media screen and (max-width: 900px) {
   .introduction p,
@@ -504,10 +507,10 @@ h1 {
 }
 @media screen and (max-height: 900px) {
     #header-welcome h1 {
-    padding-top: 200px;
+    padding-top: 180px;
   }
   .navbar-bg {
-    padding-bottom: 230px !important;
+    padding-bottom: 210px !important;
   }
 }
 @media screen and (max-width: 580px) {
@@ -570,7 +573,7 @@ h1 {
 
   #header-welcome h1 {
     padding-top: 190px;
-    padding-bottom: 20px;
+    
   }
   .navbar-bg {
     padding-bottom: 220px !important;
