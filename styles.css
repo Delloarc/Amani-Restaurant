@@ -16,7 +16,6 @@ body {
   background: var(--body-bg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   color: white;
 }
@@ -485,9 +484,6 @@ h1 {
   }
   .events p {
     width: 100%;
-  }
-  .navbar-bg {
-    background-attachment: scroll;
   }
 }
 @media screen and (max-width: 580px) {
