@@ -330,9 +330,14 @@ h1 {
 }
 .google-maps {
   margin-bottom: 120px;
+  background-color: #212121;
 }
 .google-maps iframe {
   border-radius: 6px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
 }
 
 .underline {
