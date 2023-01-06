@@ -65,7 +65,7 @@
     height: 440px;
   }
   .header-welcome h1 {
-    padding-top: 60px;
+    padding-top: 60px !important;
   }
   .navbar-bg {
     padding-bottom: 60px !important;

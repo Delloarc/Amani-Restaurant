@@ -83,7 +83,7 @@
     font-size: 1em;
   }
   .contact-options-flex {
-    display: block;
+    flex-direction: column;
   }
   .contact-intro {
     width: 100%;
