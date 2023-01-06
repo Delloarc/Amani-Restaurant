@@ -371,7 +371,13 @@ h1 {
   justify-content: center;
   gap: 16px;
 }
-
+#background-video {
+  width: 100%;
+  height: auto;
+  filter: brightness(50%);
+  filter: blur(50%);
+  margin-bottom: 80px;
+}
 @media screen and (max-width: 1500px) {
   .aktuelles-box {
     width: 400px;
@@ -511,6 +517,9 @@ h1 {
   }
   .events p {
     width: 100%;
+  }
+  .bg-video {
+    display: none;
   }
 }
 @media screen and (max-height: 900px) and (orientation: landscape) {
