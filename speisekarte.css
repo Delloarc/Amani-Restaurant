@@ -21,7 +21,7 @@
   margin-bottom: 120px;
 }
 .content p {
-  width: 400px;
+  width: 600px;
   margin: 40px auto;
 }
 .karten-flex {
@@ -45,7 +45,11 @@
 .k-if iframe {
   margin-bottom: 32px;
 }
-
+@media screen and (max-width: 724px) {
+  .content p{
+    width: 500px;
+  }
+}
 @media screen and (max-width: 580px) {
   .karten-flex {
     display: block;
