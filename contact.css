@@ -89,10 +89,10 @@
     width: 100%;
   }
   .navbar-bg {
-    padding-bottom: 40px;
+    padding-bottom: 60px !important;
   }
   .header-welcome h1 {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 24px;
   }
   .contact-options {

@@ -64,7 +64,10 @@
   .k-if iframe {
     height: 440px;
   }
+  .header-welcome h1 {
+    padding-top: 60px;
+  }
   .navbar-bg {
-    padding-bottom: 40px;
+    padding-bottom: 60px !important;
   }
 }
