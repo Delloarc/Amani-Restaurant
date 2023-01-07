@@ -1,7 +1,7 @@
 .navbar-bg {
   background-color: #212121;
   background-image: none;
-  padding-bottom: 120px;
+  padding-bottom: 120px !important;
 }
 .header-welcome h1 {
   color: #ebd2a4;

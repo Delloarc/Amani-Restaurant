@@ -1,6 +1,6 @@
 .navbar-bg {
   background-image: url(./images/restaurant\ 4.webp);
-  padding-bottom: 120px;
+  padding-bottom: 120px !important;
 }
 .contact-options {
   display: flex;

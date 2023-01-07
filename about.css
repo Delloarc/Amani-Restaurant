@@ -1,7 +1,7 @@
 .navbar-bg {
   background-image: url(./images/restaurant\ 3.webp);
   background-position: center;
-  padding-bottom: 200px;
+  padding-bottom: 200px !important;
 }
 
 .about-flex {
@@ -49,6 +49,9 @@
     padding-bottom: 60px !important	;
   }
   .header-welcome h1 {
-    padding-top: 60px;
+    padding: 60px 0 !important;
+  }
+  .about-image {
+    height: 260px;
   }
 }

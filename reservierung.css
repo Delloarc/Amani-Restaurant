@@ -1,7 +1,7 @@
 .navbar-bg {
   background-image: url(./images/restaurant\ 5.webp);
   background-position: center;
-  padding-bottom: 200px;
+  padding-bottom: 200px !important;
 }
 
 .input {
@@ -57,8 +57,7 @@ span {
     padding-bottom: 60px !important;
   }
   .header-welcome h1 {
-    padding-top: 60px;
-    padding-bottom: 24px;
+    padding: 60px 0 !important;
   }
   .input {
     width: 100%;
