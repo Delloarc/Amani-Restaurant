@@ -609,4 +609,7 @@ h1 {
   .events p {
     width: 100% ;
   }
+  .p {
+    font-size: 0.9em;
+  }
 }
