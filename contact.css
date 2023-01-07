@@ -1,4 +1,3 @@
-
 .navbar-bg {
   background-image: url(./images/restaurant\ 4.webp);
   padding-bottom: 120px;
@@ -74,16 +73,10 @@
   }
 }
 @media screen and (max-width: 580px) {
-  .contact-text {
-    text-align: center;
-    padding: 32px 8vw;
-  }
-  .contact-text > p {
-    margin: 16px 0;
-    font-size: 1em;
-  }
-  .contact-options-flex {
+  .contact-options {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact-intro {
     width: 100%;
@@ -94,11 +87,6 @@
   .header-welcome h1 {
     padding-top: 60px;
     padding-bottom: 24px;
-  }
-  .contact-options {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .contact-options p:nth-child(2) {
     display: none;
