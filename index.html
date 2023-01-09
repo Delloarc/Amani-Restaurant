@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="shortcut icon" href="./images/restaurant 6.webp" />
+    <script src="index.js"></script>
 
   </head>
   <body>
@@ -21,7 +22,7 @@
             <a href="./index.html" class="active-link">Home</a>
             <a href="./speisekarte.html">Speisekarte</a>
             <a href="./reservierung.html">Reservierung</a>
-            <a href="#events">Events</a>
+            <a href="./events.html">Events</a>
             <a href="./galerie.html">Galerie</a>
             <a href="./contact.html">Kontakt</a>
           </div>
@@ -36,7 +37,7 @@
             <a href="index.html" class="active-side-menu-link">Home</a>
             <a href="speisekarte.html">Speisekarte</a>
             <a href="./reservierung.html">Reservierung</a>
-            <a href="#events" onclick="closeNav()">Events</a>
+            <a href="./events.html" onclick="closeNav()">Events</a>
             <a href="./galerie.html">Galerie</a>
             <a href="contact.html">Kontakt</a>
           </div>
@@ -62,7 +63,7 @@
           <div class="aktuelles-box">
             <h1>Ab sofort wird bei uns Pizza angeboten</h1>
             <p>
-              Ab dem 09.01.2023 wird bei uns Pizza angeboten!
+              Ab dem 09.01.2023 wird bei uns Pizza im Sortiment angeboten!
             </p>
           </div>
         </div>
@@ -71,33 +72,32 @@
       <div class="introduction">
         <h1 style="color: #ebd2a4">Wir heißen Sie willkommen!</h1>
         <p>
-          Casa Amani ist das kulinarische und gastronomische Restaurant in der Hansaallee - hier pulsiert das Leben jeden Abend und
-          insbesondere am Wochenende. Die Location bietet ein kulinarisches
-          Erlebnis auf internationalem Spitzenniveau. Die ungewöhnliche Mischung
-          aus mediterraner Kulinarik, moderner Innenarchitektur, Top-Service und
-          spannendem Nachtleben macht die Meerbar nicht nur exzellent, sondern
-          auch einzigartig.
+          Willkommen im neu eröffneten Restaurant Casa Amani in der Hansaallee! Ob Sie sich nun mit Ihren Freunden verabreden, mit Ihrem Partner ausgehen, ein geschäftliches Essen mit Kunden haben, oder einfach unsere köstlichen Speisen genießen wollen, wir sind stets für Sie da! 
         </p>
       </div>
+      <div class="bg-video">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="./images/restaurant.webp"
+      >
+        <source src="./images/video.mp4" type="video/mp4" />
+      </video>
+    </div>
 
       <div class="content">
+        
         <div class="speisen-wrapper">
           <h1>Unsere Speisen</h1>
           <div class="speisen-flex">
             <div class="speisen-text">
               <p>
-                Unsere Küche bietet klassischen und modernen Genuss, der
-                weltweit seinesgleichen sucht. Während Ihr Gaumen mit unendlich
-                sinnlichen Genüssen verwöhnt wird, kann sich Ihre Seele der
-                Terrasse mit Rheinblick, den Erlebnisnächten und den kulturellen
-                Events hingeben.
+                Wir legen nicht nur sehr viel Wert auf hohe Qualität, sondern auch auf die Vielfalt und Varietät unserer Speisen. Alles wird vom Chefkoch Farhad Amani persönlich zubereitet, seien es Brathähnchen oder Backfische. Neben alten Klassikern probieren wir ständig neue Rezepturen und versuchen so, Gäste von unserer Kochkunst zu begeistern.
               </p>
               <p>
-                Freuen Sie sich auf ein unglaubliches Angebot an fangfrischen
-                Meeresfrüchten, die unser junges Küchenteam tagtäglich kreativ
-                und innovativ zubereitet. Selbstverständlich kommen Sie in der
-                Meerbar ganz auf Ihre Kosten, auch wenn Sie keinen Fisch
-                bevorzugen oder vegetarisch essen.
+                Nicht nur Gäste wollen Abwechslung, aber auch der Koch möchte neue Gerichte versuchen und andere Rezepte entdecken. Deshalb gibt es bei uns die täglich wechselnde Tageskarte und Mittagskarte.
               </p>
               <div class="button-link">
                 <a href="./speisekarte.html">Zur Speisekarte</a>
@@ -115,17 +115,12 @@
             <div class="drinks-text">
               <h1>Getränke</h1>
               <p>
-                Casa Amani wäre kein Restaurant, wenn es keinen guten Wein, Cocktails und Grappas gäbe: Wählen
-                Sie aus einem breiten Angebot klassischer und beliebter
-                Kreationen oder probieren Sie auch einmal etwas Neues.
+                Casa Amani wäre kein Restaurant, wenn es keinen guten Wein, Cocktails und Grappas gäbe: Wir sind nicht ein Restaurant, das nur die Klassiker unter den Getränken serviert, sondern auch guten Wein, erfrischende Cocktails und selbstzubereitete Grappas hat.
               </p>
               <p>
-                Unser Sortiment an Spirituosen entspricht der internationalen
-                Spitzen-Hotellerie und bietet Ihnen von erlesenen Whiskeys bis
-                zu ausgefallenen Gins alles, was Ihnen schmeckt.
-                Selbstverständlich haben wir auch im nichtalkoholischen Bereich
-                ein großes Angebot an heißen und kalten Getränken an. Der Genuss
-                ist garantiert!
+                Unsere Getränke sind genauso top wie unsere Gerichte. Auch wenn Sie nicht immer selbst zubereitet werden, garantieren wir Ihnen, dass Sie unser Sortiment an Spirituosen genießen werden.
+                Selbstverständlich bieten wir auch im alkoholfreien Bereich
+                ein großes Angebot an heißen und kalten Getränken an.
               </p>
               <div class="button-link">
                 <a href="./speisekarte.html">Getränke</a>
@@ -135,25 +130,18 @@
         </div>
       </div>
 
-      <div class="events" id="events">
+      <div class="events">
         <h1 style="color: #ebd2a4; text-align: center; margin-bottom: 24px">
           Unsere Veranstaltungen
         </h1>
         <p>
           Wir organisieren regelmäßig Veranstaltungen und Events, zu denen auch
-          Sie eingeladen sind! Hier finden Sie einen Event-Kalender, in dem
-          bevorstehende Veranstaltungen und Feste aufgelistet werden. Genauere
-          Informationen zu den Events gibt es auf unserem Social Media. Falls
-          Sie Ihr privates Fest bei uns feiern wollen, können Sie uns gerne
-          kontaktieren.
+          Sie eingeladen sind!
         </p>
-        <iframe title="Google Kalender"
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FBerlin&showTz=0&showTitle=0&showNav=1&showPrint=0&showTabs=1&src=cmVzdGF1cmFudEBjYXNhLWFtYW5pLmRl&color=%23039BE5"
-          style="border-width: 0"
-          width="100%"
-          height="800"
-          frameborder="0"
-        ></iframe>
+        <div class="link-to-events" style="text-align: center; margin-top: 16px;">
+          <a href="./events.html">Zu den Events</a>
+        </div>
+        
       </div>
 
 
@@ -174,18 +162,6 @@
         ></iframe>
         
       </div>
-    </div>
-
-    <div class="bg-video">
-      <video
-        id="background-video"
-        autoplay
-        loop
-        muted
-        poster="./images/restaurant.webp"
-      >
-        <source src="./images/video.mp4" type="video/mp4" />
-      </video>
     </div>
 
     <div class="underline" style="margin-top: 64px;"></div>
