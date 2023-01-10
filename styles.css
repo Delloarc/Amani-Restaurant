@@ -256,7 +256,7 @@ h1 {
 }
 .speisen-text a:hover,
 .drinks-text a:hover,
-.events-text a:hover, .events a {
+.events-text a:hover, .events a:hover {
   opacity: 0.75;
 }
 #food-bg {
