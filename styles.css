@@ -38,7 +38,7 @@ h1 {
   font-size: 1.6em;
 }
 .navbar-bg {
-  padding: 24px 0 340px 0;
+  padding: 24px 0 340px 0 !important;
   background-color: rgb(85, 85, 85);
   background-image: url(./images/restaurant.webp);
   background-size: cover;
