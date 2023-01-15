@@ -131,7 +131,7 @@ h1 {
   flex-direction: column;
   z-index: 100;
   position: fixed;
-  transition: 0.25s all ease-in;
+  transition: 0.18s all ease-in;
 }
 .side-menu a {
   text-decoration: none;
