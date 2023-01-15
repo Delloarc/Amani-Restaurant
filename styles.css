@@ -121,17 +121,17 @@ h1 {
   right: 60px;
 }
 .side-menu {
-  display: none;
   background-color: var(--text-color);
   align-items: center;
   text-align: center;
   right: 0;
   top: 0;
-  width: 500px;
+  width: 0;
   height: 100vh;
   flex-direction: column;
   z-index: 100;
   position: fixed;
+  transition: 0.25s all ease-in;
 }
 .side-menu a {
   text-decoration: none;
@@ -581,9 +581,10 @@ h1 {
     line-height: 20px;
     font-size: 0.9em;
   }
-  .side-menu {
+
+  /* .side-menu {
     width: 100%;
-  }
+  } */
   .toggle-button img {
     width: 24px;
   }
