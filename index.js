@@ -10,16 +10,16 @@ function toggleNav() {
   document.getElementById("navbar-links").style.display = "none";
   document.getElementById("close-button").style.display = "block";
   document.getElementById("toggle-button").style.visibility = "hidden";
-  document.getElementById("active-side-menu-link").style.visibility = "visible";
+  document.getElementById("close-button-img").style.width = "20px";
 }
 
 function closeNav() {
   document.getElementById("side-menu").style.width = "0";
-  document.getElementById("close-button").style.display = "none";
-  document.getElementById("navbar-links").style.display = "none";
-  
+
+  document.getElementById("close-button-img").style.width = "0";
   document.getElementById("toggle-button").style.visibility = "visible";
-  document.getElementById("active-side-menu-link").style.visibility = "hidden";
+  document.getElementById("active-side-menu-link").style.paddingLeft = "0";
+  document.getElementById("active-side-menu-link").style.paddingRight = "0";
 }
 
 var x = window.matchMedia("(max-width: 580px)");
