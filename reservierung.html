@@ -90,7 +90,7 @@
             />
           </div>
 
-          <!-- <div class="form-group">
+          <div class="form-group">
             <input
               type="number"
               id="personenanzahl"
@@ -99,15 +99,27 @@
               placeholder="Personenanzahl"
               required
             />
-          </div> -->
+          </div>
 
-          <label for="date">Für wann reservieren Sie?</label>
+          <label for="date">Für welchen Tag reservieren Sie?</label>
 
           <div class="form-group">
             <input
-              type="datetime-local"
-              id="datetime-local"
+              type="date"
+              id="date"
               name="Datum"
+              class="input"
+              required
+            />
+          </div>
+
+          <label for="time">Für welche Uhrzeit reservieren Sie?</label>
+
+          <div class="form-group">
+            <input
+              type="time"
+              id="time"
+              name="Uhrzeit"
               class="input"
               required
             />
