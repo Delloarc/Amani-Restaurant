@@ -324,6 +324,7 @@ h1 {
   vertical-align: middle;
   margin: auto;
   transform: translateY(-20%);
+  object-fit: cover;
 }
 .swiper-button-white {
   color: white !important;
