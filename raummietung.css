@@ -1,0 +1,55 @@
+.navbar-bg {
+  background-image: url(./images/room.jpg);
+  padding-bottom: 200px !important;
+}
+.intro-text {
+  width: 660px;
+  margin: 100px auto;
+}
+.intro-text a {
+  color: #ebd2a4;
+}
+.impressionen-flex {
+  display: flex;
+  align-items: center;
+}
+.item {
+  background-color: black;
+  height: 480px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: brightness(130%);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #ebd2a4;
+}
+@media screen and (max-width: 1400px) {
+  .item {
+    height: 380px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .item {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .intro-text {
+    width: 100%;
+  }
+  .navbar-bg {
+    padding-bottom: 60px !important;
+  }
+  .item {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .impressionen-flex {
+    flex-direction: column;
+  }
+}

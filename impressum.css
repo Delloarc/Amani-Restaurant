@@ -9,18 +9,6 @@ h2 {
   font-family: "poppins";
   margin-top: 32px;
 }
-a:nth-child(1) {
-  line-height: 60px;
-  text-decoration: none;
-  border: 1px solid var(--background-color);
-  padding: 12px 24px;
-  color: var(--background-color);
-  border-radius: 6px;
-  transition: all 0.3s ease-in;
-}
-a:nth-child(1):hover {
-  opacity: 0.75;
-}
 .content {
   width: 700px;
   margin: 0 auto;

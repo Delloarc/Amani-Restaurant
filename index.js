@@ -23,5 +23,3 @@ function closeNav() {
 }
 
 var x = window.matchMedia("(max-width: 580px)");
-
-

@@ -3,7 +3,7 @@
   background-image: url(./images/speisen-getraenke.webp);
   padding-bottom: 200px !important;
 }
-.content a {
+.introduction a, .karten-iframes a {
   text-decoration: none;
   color: #ebd2a4;
   border: 1px solid #ebd2a4;
@@ -12,15 +12,28 @@
   width: 160px;
   transition: 0.3s all ease-in;
 }
-.content a:hover {
+body {
+  background-color: #777777;
+  background-image: url(./images/speisekarte-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+.introduction {
+  background: #212121;
+  text-align: center;
+  padding-top: 60px;
+}
+body a:hover {
   opacity: 0.5;
 }
 .content {
-  text-align: center;
+text-align: center;
   margin-top: 60px;
   margin-bottom: 120px;
 }
-.content p {
+.introduction p {
   width: 600px;
   margin: 40px auto;
 }
@@ -48,6 +61,9 @@
 @media screen and (max-width: 724px) {
   .content p{
     width: 500px;
+  }
+  .introduction p {
+  width: 90%;
   }
 }
 @media screen and (max-width: 580px) {
