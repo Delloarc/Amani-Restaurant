@@ -6,6 +6,7 @@
     <title>Speisekarte</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="speisekarte.css" />
@@ -20,34 +21,44 @@
         </div>
         <div class="navbar-links" id="navbar-links">
           <a href="./index.html">Home</a>
-          <a href="./speisekarte.html" class="active-link">Speisekarte</a>
+          <div class="karten-links">
+              <a href="javascript:void(0)" onclick="karten_click()">Karten v</a>
+              <div class="karten">
+                <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
+            <a href="javascript:void(0)"><img src="images/close.png" alt="Close" width="16px" onclick="karten_close()" ></a>
+              </div>
+            </div>
           <a href="./reservierung.html">Reservierung</a>
           <a href="./events.html">Events</a>
           <a href="./galerie.html">Galerie</a>
           <a href="./raummietung.html">Raummietung</a>
+          <a href="./jobs.html">Jobs & Karriere</a>
           <a href="./contact.html">Kontakt</a>
         </div>
 
         <div class="side-menu" id="side-menu">
           <div class="close-button" id="close-button">
-            <a href="#" onclick="closeNav()"
+            <a href="javascript:void(0)" onclick="closeNav()"
               ><img src="./images/close.png" alt="" id="close-button-img"
             /></a>
           </div>
 
           <a href="index.html">Home</a>
-          <a href="speisekarte.html" class="active-side-menu-link" id="active-side-menu-link"
-            >Speisekarte</a
-          >
+          <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
           <a href="./reservierung.html">Reservierung</a>
           <a href="./index.html#events">Events</a>
           <a href="./galerie.html" >Galerie</a>
           <a href="./raummietung.html">Raummietung</a>
+          <a href="./jobs.html">Jobs & Karriere</a>
           <a href="contact.html">Kontakt</a>
         </div>
 
         <div class="toggle-button" id="toggle-button">
-          <a href="#" onclick="toggleNav()"
+          <a href="javascript:void(0)" onclick="toggleNav()"
             ><img src="./images/menu.webp" alt=""
           /></a>
         </div>
@@ -64,65 +75,16 @@
       </p>
       <div class="karten-flex">
         <div class="kf-item">
-          <a href="#speisekarte">Speisekarte</a>
+          <a href="./karte-speisen.html">Speisekarte</a>
         </div>
         <div class="kf-item">
-          <a href="#mittagskarte">Mittagskarte</a>
+          <a href="./karte-mittag.html">Mittagskarte</a>
         </div>
         <div class="kf-item">
-          <a href="#getraenkekarte">Getränkekarte</a>
+          <a href="./karte-getraenke.html">Getränkekarte</a>
         </div>
       </div>
       </div>
-
-    <div class="content">
-      
-      
-
-      <div class="karten-iframes">
-        <div class="k-if" id="speisekarte">
-          <h1>Speisekarte</h1>
-          <iframe
-            src="https://drive.google.com/file/d/18dnofIkqupIYLEYj0wXeEvRIazYIpQFa/preview"
-            width="100%"
-            height="540px"
-            frameborder="0"
-          ></iframe>
-          <a
-            href="./pdfs/NEUE SPEISEKARTE CASA AMANI-Neu-09.10.2022-Speisekarte.Ohne-G.pdf"
-            >Download</a
-          >
-        </div>
-
-        <div class="k-if" id="mittagskarte">
-          <h1>Mittagskarte</h1>
-          <iframe
-            src="https://drive.google.com/file/d/189cG1-hMMDi0YPrp7ZpBzDeCImH5ZGLy/preview"
-            width="100%"
-            height="540px"
-            frameborder="0"
-          ></iframe>
-          <a
-            href="https://drive.google.com/file/d/189cG1-hMMDi0YPrp7ZpBzDeCImH5ZGLy/view?usp=share_link"
-            >Download</a
-          >
-        </div>
-
-        <div class="k-if" id="getraenkekarte">
-          <h1>Getränkekarte</h1>
-          <iframe
-            src="https://drive.google.com/file/d/1QiMAKrY3TT9r7ou5Eal0eRca3f3pT9ly/preview"
-            width="100%"
-            height="540px"
-            frameborder="0"
-          ></iframe>
-          <a
-            href="./pdfs/NEUE SPEISEKARTE CASA AMANI-Neu-09.10.2022_Getränkekarte .pdf"
-            >Download</a
-          >
-        </div>
-      </div>
-    </div>
 
     <div class="underline"></div>
 
@@ -183,7 +145,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <h1
@@ -227,7 +189,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <div

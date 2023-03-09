@@ -16,27 +16,6 @@
   margin: 32px auto;
   margin-top: 80px;
 }
-.contact-form {
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-#submit-button {
-  border: none;
-  color: black;
-  background: #ebd2a4;
-  transition: 0.2s all ease-in;
-  box-sizing: border-box;
-}
-#submit-button:hover {
-  color: #ebd2a4;
-  background: #212121;
-  border: 1px solid #ebd2a4;
-  cursor: pointer;
-}
-.input:nth-child(2) {
-  margin-bottom: 32px; 
-}
 span {
   color: #ebd2a4;
 }

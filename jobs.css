@@ -1,0 +1,24 @@
+.navbar-bg {
+  background-image: url(./images/restaurant\ 4.webp);
+  padding-bottom: 200px !important;
+}
+.intro-text h1 {
+  color: #ebd2a4;
+}
+.intro-text {
+  width: 640px;
+  margin: 64px auto 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .intro-text {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .navbar-bg {
+    padding-bottom: 60px !important;
+  }
+  .intro-text {
+    width: 100%;
+  }
+}

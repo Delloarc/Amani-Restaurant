@@ -6,6 +6,7 @@
     <title>Reservierungen</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="reservierung.css" />
     <link rel="shortcut icon" href="./images/restaurant 6.webp" />
@@ -19,34 +20,46 @@
         </div>
         <div class="navbar-links" id="navbar-links">
           <a href="./index.html">Home</a>
-          <a href="./speisekarte.html">Speisekarte</a>
+          <div class="karten-links">
+              <a href="javascript:void(0)" onclick="karten_click()">Karten v</a>
+              <div class="karten">
+                <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
+            <a href="javascript:void(0)"><img src="images/close.png" alt="Close" width="16px" onclick="karten_close()" ></a>
+              </div>
+            </div>
           <a href="./reservierung.html" class="active-link">Reservierung</a>
           <a href="./events.html">Events</a>
           <a href="./galerie.html">Galerie</a>
           <a href="./raummietung.html">Raummietung</a>
+          <a href="./jobs.html">Jobs & Karriere</a>
           <a href="./contact.html">Kontakt</a>
         </div>
 
         <div class="side-menu" id="side-menu">
           <div class="close-button" id="close-button">
-            <a href="#" onclick="closeNav()"
+            <a href="javascript:void(0)" onclick="closeNav()"
               ><img src="./images/close.png" alt="" id="close-button-img"
             /></a>
           </div>
 
           <a href="index.html">Home</a>
-          <a href="speisekarte.html">Speisekarte</a>
+          <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
           <a href="./reservierung.html" class="active-side-menu-link" id="active-side-menu-link"
             >Reservierung</a
           >
           <a href="./events.html">Events</a>
           <a href="./galerie.html">Galerie</a>
           <a href="./raummietung.html">Raummietung</a>
+          <a href="./jobs.html">Jobs & Karriere</a>
           <a href="contact.html">Kontakt</a>
         </div>
 
         <div class="toggle-button" id="toggle-button">
-          <a href="#" onclick="toggleNav()"
+          <a href="javascript:void(0)" onclick="toggleNav()"
             ><img src="./images/menu.webp" alt=""
           /></a>
         </div>
@@ -67,7 +80,7 @@
           damit Sie gültig ist.
         </p>
       </div>
-      <div id="hors-hydra-7956e180-8f2d-11ec-be6a-a18e66178db1"></div><script>	var _hors=[['eid','hydra-7956e180-8f2d-11ec-be6a-a18e66178db1'],['tagid','hors-hydra-7956e180-8f2d-11ec-be6a-a18e66178db1'],['width','100%'],['height',''],['foregroundColor','white'],['backgroundColor','#212121'],['linkColor',''],['errorColor',''],['primaryButtonForegroundColor',''],['primaryButtonBackgroundColor',''],['secondaryButtonForegroundColor',''],['secondaryButtonBackgroundColor','']];	(function(d, t) { var e=d.createElement(t),s=d.getElementsByTagName(t)[0];	e.src = "https://reservation.dish.co/widget.js";	s.parentNode.insertBefore(e,s);	}(document, 'script'));</script>
+      <div id="hors-hydra-7956e180-8f2d-11ec-be6a-a18e66178db1"></div><script>	var _hors=[['eid','hydra-7956e180-8f2d-11ec-be6a-a18e66178db1'],['tagid','hors-hydra-7956e180-8f2d-11ec-be6a-a18e66178db1'],['width','100%'],['height',''],['foregroundColor','white'],['backgroundColor','#000'],['linkColor',''],['errorColor',''],['primaryButtonForegroundColor','#000'],['primaryButtonBackgroundColor','#ebd2af'],['secondaryButtonForegroundColor','#ebd2a4'],['secondaryButtonBackgroundColor','ebd2a4']];	(function(d, t) { var e=d.createElement(t),s=d.getElementsByTagName(t)[0];	e.src = "https://reservation.dish.co/widget.js";	s.parentNode.insertBefore(e,s);	}(document, 'script'));</script>
     </div>
 
     <div class="underline"></div>
@@ -129,7 +142,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <h1
@@ -173,7 +186,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <div

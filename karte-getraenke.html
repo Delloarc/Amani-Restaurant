@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Speisekarte</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="speisekarte.css" />
+    <link rel="shortcut icon" href="./images/restaurant 6.webp" />
+    <script src="index.js" async defer></script>
+  </head>
+  <body>
+
+    <div class="navbar-bg" style="background-image: url(./images/drinks-bg.jpg);">
+
+              <div class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+          </div>
+          <div class="navbar-links" id="navbar-links">
+            <a href="./index.html">Home</a>
+            <div class="karten-links">
+              <a href="javascript:void(0)" onclick="karten_click()">Karten v</a>
+              <div class="karten">
+                <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
+            <a href="javascript:void(0)"><img src="images/close.png" alt="Close" width="16px" onclick="karten_close()" ></a>
+              </div>
+            </div>
+            <a href="./reservierung.html">Reservierung</a>
+            <a href="./events.html">Events</a>
+            <a href="./galerie.html">Galerie</a>
+            <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
+            <a href="./contact.html">Kontakt</a>
+          </div>
+
+          <div class="side-menu" id="side-menu">
+            <div class="close-button" id="close-button">
+              <a href="javascript:void(0)" onclick="closeNav()"
+                ><img src="./images/close.png" alt="" id="close-button-img"
+              /></a>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html" class="active-side-menu-link" id="active-side-menu-link">Getränkekarte</a>
+            <a href="./reservierung.html">Reservierung</a>
+            <a href="./events.html">Events</a>
+            <a href="./galerie.html">Galerie</a>
+            <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
+            <a href="contact.html">Kontakt</a>
+          </div>
+
+          <div class="toggle-button" id="toggle-button">
+            <a href="javascript:void(0)" onclick="toggleNav()"
+              ><img src="./images/menu.webp" alt=""
+            /></a>
+          </div>
+        </div>
+
+      <div class="header-welcome">
+        <h1>Getränkekarte</h1>
+      </div>
+    </div>
+
+
+    <div class="content">
+
+        <div class="k-if" id="getraenkekarte">
+          <iframe
+            src="https://drive.google.com/file/d/1QiMAKrY3TT9r7ou5Eal0eRca3f3pT9ly/preview"
+            width="100%"
+            height="800px"
+            frameborder="0"
+          ></iframe>
+          
+        </div>
+        <a
+            href="./pdfs/NEUE SPEISEKARTE CASA AMANI-Neu-09.10.2022_Getränkekarte .pdf"
+            >Download</a
+          >
+    
+  </body>
+</html>

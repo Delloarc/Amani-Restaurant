@@ -6,6 +6,7 @@
     <title>Casa Amani Düsseldorf</title>
     <meta name="description" content="Willkommen bei Casa Amani, dem neu eröffneten Restaurant in der Hansaallee. In unserem modernen, neu renovierten Restaurant bieten wir leckere Speisen und erfrischende Getränke an " />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./styles.css" />
     
@@ -21,32 +22,46 @@
           </div>
           <div class="navbar-links" id="navbar-links">
             <a href="./index.html" class="active-link">Home</a>
-            <a href="./speisekarte.html">Speisekarte</a>
+            <div class="karten-links">
+              <a href="javascript:void(0)" onclick="karten_click()">Karten v</a>
+              <div class="karten">
+                <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
+            <a href="javascript:void(0)"><img src="images/close.png" alt="Close" width="16px" onclick="karten_close()" ></a>
+              </div>
+            </div>
+            
+            
             <a href="./reservierung.html">Reservierung</a>
             <a href="./events.html">Events</a>
             <a href="./galerie.html">Galerie</a>
             <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
             <a href="./contact.html">Kontakt</a>
           </div>
 
           <div class="side-menu" id="side-menu">
             <div class="close-button" id="close-button">
-              <a href="#" onclick="closeNav()"
+              <a href="javascript:void(0)" onclick="closeNav()"
                 ><img src="./images/close.png" alt="" id="close-button-img"
               /></a>
             </div>
 
             <a href="index.html" class="active-side-menu-link" id="active-side-menu-link">Home</a>
-            <a href="speisekarte.html">Speisekarte</a>
+            <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
             <a href="./reservierung.html">Reservierung</a>
             <a href="./events.html">Events</a>
             <a href="./galerie.html">Galerie</a>
             <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
             <a href="contact.html">Kontakt</a>
           </div>
 
           <div class="toggle-button" id="toggle-button">
-            <a href="#" onclick="toggleNav()"
+            <a href="javascript:void(0)" onclick="toggleNav()"
               ><img src="./images/menu.webp" alt=""
             /></a>
           </div>
@@ -55,7 +70,7 @@
         <div class="header-welcome" id="header-welcome">
           <h1>Casa Amani</h1>
           <div class="header-links">
-            <a href="./speisekarte.html">Speisekarte</a>
+            <a href="./karte-speisen.html">Speisekarte</a>
             <a href="./reservierung.html">Reservierung</a>
           </div>
         </div>
@@ -63,19 +78,26 @@
       <div class="content">
         <h1 id="aktuelles-header">Aktuelle Informationen</h1>
         <div class="aktuelles">
+          
+
           <div class="aktuelles-box">
-            <div class="ab-text">
-            <p>09.01.2023</p>
-            <h1>Ab sofort wird Pizza angeboten</h1>
-            <p>
-              Ab dem 09.01.2023 wird bei uns Pizza im Sortiment angeboten!
-            </p>
-            </div>
-            <div class="ab-img" style="background-image: url(./images/aktuelles-img.jpg);">
-            </div>
             
+            <img src="./images/flyer.jpeg" alt="Flyer" id="flyer" width="100%">
 
           </div>
+
+          <div class="aktuelles-box">
+            <div class="ab-text">
+            <h1>Ab sofort wird Pizza angeboten</h1>
+            <p>
+              Ab sofort wird bei uns Pizza im Sortiment angeboten!
+            </p>
+            </div>
+            <div class="ab-img">
+              <img src="./images/aktuelles-img.jpg" alt="" width="100%">
+            </div>
+          </div>
+          
         </div>
       </div>
 
@@ -111,13 +133,13 @@
                 Nicht nur Gäste wollen Abwechslung, aber auch der Koch möchte neue Gerichte versuchen und andere Rezepte entdecken. Deshalb gibt es bei uns die täglich wechselnde Tageskarte und Mittagskarte.
               </p>
               <div class="button-link">
-                <a href="./speisekarte.html">Zur Speisekarte</a>
+                <a href="speisen.html">Unsere Speisen</a>
               </div>
             </div>
 
             <div class="slider-wrapper">
-              <div class="slider">
-                <img id="slide-8" src="./slideshow drinks/8.jpeg" alt="slideshow image">
+              <div class="slider" id="slider">
+                <img id="slide-8" src="./slideshow drinks/8.jpeg" alt="slideshow image" class="active">
                 <img id="slide-9" src="./slideshow drinks/9.jpeg" alt="slideshow image">
                 <img id="slide-10" src="./slideshow drinks/10.jpeg" alt="slideshow image">
                 <img id="slide-11" src="./slideshow drinks/11.jpeg" alt="slideshow image">
@@ -135,7 +157,7 @@
         <div class="drinks-wrapper">
           <div class="drinks-flex">
             <div class="slider-wrapper">
-              <div class="slider slider2">
+              <div class="slider slider2" id="slider">
 
                 <img id="slide-1" src="./images/wine1.jpeg" alt="slideshow image">
                 <img id="slide-2" src="./images/wine2.jpeg" alt="slideshow image">
@@ -149,7 +171,7 @@
               
 
             <div class="drinks-text">
-              <h1>Getränke</h1>
+              <h1>Unsere Getränke</h1>
               <p>
                 Casa Amani wäre kein Restaurant, wenn es keinen guten Wein, Cocktails und Grappas gäbe: Wir sind nicht ein Restaurant, das nur die Klassiker unter den Getränken serviert, sondern auch guten Wein, erfrischende Cocktails und selbstzubereitete Grappas hat.
               </p>
@@ -159,7 +181,7 @@
                 ein großes Angebot an heißen und kalten Getränken an.
               </p>
               <div class="button-link">
-                <a href="./speisekarte.html">Getränke</a>
+                <a href="./getraenke.html">Unsere Getränke</a>
               </div>
             </div>
           </div>
@@ -273,7 +295,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <h1
@@ -317,7 +339,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <div

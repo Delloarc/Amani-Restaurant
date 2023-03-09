@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./events.css" />
     <link rel="shortcut icon" href="./images/restaurant 6.webp" />
-    <script src="./index.js"></script>
+    
   </head>
   <body>
     <div class="navbar-bg">
@@ -19,32 +19,44 @@
           </div>
           <div class="navbar-links" id="navbar-links">
             <a href="./index.html">Home</a>
-            <a href="./speisekarte.html">Speisekarte</a>
+            <div class="karten-links">
+              <a href="javascript:void(0)" onclick="karten_click()">Karten v</a>
+              <div class="karten">
+                <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
+            <a href="javascript:void(0)"><img src="images/close.png" alt="Close" width="16px" onclick="karten_close()" ></a>
+              </div>
+            </div>
             <a href="./reservierung.html">Reservierung</a>
             <a href="./events.html" class="active-link">Events</a>
             <a href="./galerie.html">Galerie</a>
             <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
             <a href="./contact.html">Kontakt</a>
           </div>
 
           <div class="side-menu" id="side-menu">
             <div class="close-button" id="close-button">
-              <a href="#" onclick="closeNav()"
+              <a href="javascript:void(0)" onclick="closeNav()"
                 ><img src="./images/close.png" alt="" id="close-button-img"
               /></a>
             </div>
 
             <a href="index.html">Home</a>
-            <a href="speisekarte.html">Speisekarte</a>
+            <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
             <a href="./reservierung.html">Reservierung</a>
             <a href="events.html" class="active-side-menu-link" id="active-side-menu-link">Events</a>
             <a href="./galerie.html">Galerie</a>
             <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
             <a href="contact.html">Kontakt</a>
           </div>
 
           <div class="toggle-button" id="toggle-button">
-            <a href="#" onclick="toggleNav()"
+            <a href="javascript:void(0)" onclick="toggleNav()"
               ><img src="./images/menu.webp" alt="" 
             /></a>
           </div>
@@ -66,50 +78,31 @@
     <div class="events-grid">
 
       <div class="eg-item">
-        <div class="eg-text">
-          <h2>Neujahresfeier</h2>
-          <p class="e-date">09.01.2023 | 17:30</p>
-          <p>Mit dem neuen Jahr kommt auch unsere Neujahrsfeier! Es steht eine große Auswahl an Essen und Trinken zur Verfügung. Wenn Sie Interesse haben, kontaktieren Sie uns und schicken Sie uns eine Anfrage.</p>
-        </div>
-        <div class="eg-img" style="background-image: url(./images/restaurant\ 6.webp)">
-
-        </div>
+        <img src="./images/flyer.jpeg" alt="Flyer" width="100%" style="object-fit: contain; border-radius: 6px;">
       </div>
 
       <div class="eg-item">
         <div class="eg-text">
-          <h2>Osterparty</h2>
-          <p class="e-date">12.04.2023 | 12:30</p>
-          <p>Zu Ostern gibt es eine kleine Party auf der Terasse. Cocktails, Sitzplätze und ein Büffet sind bereit.</p>
+          <h2>Anstehend</h2>
+          <p class="e-date"></p>
+          <p></p>
         </div>
-        <div class="eg-img" style="background-image: url(./images/restaurant\ 4.webp)">
+        <!-- <div class="eg-img" style="background-image: url(./images/restaurant\ 4.webp)">
 
-        </div>
+        </div> -->
       </div>
 
       <div class="eg-item">
         <div class="eg-text">
-          <h2>Sommerfest</h2>
-          <p class="e-date">17.07.2023 | 14:30</p>
-          <p>Auch wenn es im Sommer sehr warm wird, bieten wir mit erfrischenden Getränken auf unserem Sommerfest Erfrischung. Sitzplätze sowohl draußen als auch drinnen.</p>
+          <h2>Anstehend</h2>
+          <p class="e-date"></p>
+          <p></p>
         </div>
-        <div class="eg-img" style="background-image: url(./images/restaurant\ 5.webp)">
+        <!-- <div class="eg-img" style="background-image: url(./images/restaurant\ 5.webp)">
 
-        </div>
+        </div> -->
       </div>
 
-
-    </div>
-
-    <h1 style="color: #ebd2a4; text-align: center">Kalender</h1>
-
-    <iframe title="Google Kalender"
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FBerlin&showTz=0&showTitle=0&showNav=1&showPrint=0&showTabs=1&src=cmVzdGF1cmFudEBjYXNhLWFtYW5pLmRl&color=%23039BE5"
-          style="border-width: 0"
-          width="100%"
-          height="800"
-          frameborder="0"
-        ></iframe>
 
     </div>
 
@@ -173,7 +166,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <h1
@@ -217,7 +210,7 @@
           </div>
           <div>
             <h3>Sonntag</h3>
-            <p>Nach Absprache bei privaten Festen geöffnet</p>
+            <p>Nach Absprache bei</p><p>privaten Festen geöffnet</p>
           </div>
         </div>
         <div
@@ -258,6 +251,6 @@
         </p>
       </div>
     </div>
-    
+    <script src="./index.js"></script>
   </body>
 </html>

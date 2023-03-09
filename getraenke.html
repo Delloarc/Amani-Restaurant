@@ -1,0 +1,97 @@
+
+    
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Speisekarte</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="shortcut icon" href="./images/restaurant 6.webp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="speisen.css">
+  
+    
+
+  </head>
+  <body>
+
+    <div class="navbar-bg" style="background-image: none; background-color: black; padding-bottom: 0 !important;">
+<div class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+          </div>
+          <div class="navbar-links" id="navbar-links">
+            <a href="./index.html">Home</a>
+            <div class="karten-links">
+              <a href="javascript:void(0)" onclick="karten_click()">Karten v</a>
+              <div class="karten">
+                <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
+            <a href="javascript:void(0)"><img src="images/close.png" alt="Close" width="16px" onclick="karten_close()" ></a>
+              </div>
+            </div>
+            <a href="reservierung.html">Reservierung</a>
+            <a href="./events.html">Events</a>
+            <a href="./galerie.html">Galerie</a>
+            <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
+            <a href="./contact.html">Kontakt</a>
+          </div>
+
+          <div class="side-menu" id="side-menu">
+            <div class="close-button" id="close-button">
+              <a href="javascript:void(0)" onclick="closeNav()"
+                ><img src="./images/close.png" alt="" id="close-button-img"
+              /></a>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="./karte-speisen.html">Speisekarte</a>
+            <a href="./karte-mittag.html">Mittagskarte</a>
+            <a href="./karte-getraenke.html">Getränkekarte</a>
+            <a href="./reservierung.html">Reservierung</a>
+            <a href="./events.html">Events</a>
+            <a href="./galerie.html">Galerie</a>
+            <a href="./raummietung.html">Raummietung</a>
+            <a href="./jobs.html">Jobs & Karriere</a>
+            <a href="contact.html">Kontakt</a>
+          </div>
+
+          <div class="toggle-button" id="toggle-button">
+            <a href="javascript:void(0)" onclick="toggleNav()"
+              ><img src="./images/menu.webp" alt=""
+            /></a>
+          </div>
+        </div>
+    </div>
+    
+
+
+    <div class="content">
+      <h1>Unsere Getränke</h1>
+      
+          <div class="carousel">
+            
+    <a class="carousel-item" href="#one!"><img src="./images/wine1.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="./images/wine2.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="./images/wine3.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="./images/wine4.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="./images/wine5.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="./images/wine6.jpeg"></a>
+  </div>
+        </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
